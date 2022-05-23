@@ -5,8 +5,6 @@ from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
 from collections import deque
 
-
-
 class Tree:
     #инициализация класса Tree
     def __init__(self, parent, url, degree):
@@ -130,7 +128,7 @@ int_url = set()
 target_url = sys.argv[2]
 #вершина дерева (родитель вершины None и степень 0)
 tree = Tree(None, sys.argv[1], 0)
-#инициализировать очерель
+#инициализировать очередь
 queue = deque()
 #добавить вершину в очередь
 queue.append(tree)
